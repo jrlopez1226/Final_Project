@@ -26,10 +26,11 @@ def fetch_news():
         news_item = f"Title: {title}\nDescription: {description}\nURL: {url}\n"
         news_list.append(news_item)
 
-    return news_list
+    return articles
 
 # Run and print
 if __name__ == "__main__":
     news = fetch_news()
     for i, article in enumerate(news, 1):
         print(f"\nArticle {i}:\n{article}")
+
